@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <title>Busqueda de Google avanazada</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <link rel="stylesheet" href="estilos.css">
+      <style>
+        div {
+          margin: .4em 0;
+        }
+        div label {
+          width: 25%;
+          float: left;
+        }
+      </style>
+    </head>
+    <body>
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google.png" width="180" height="50" class="d-inline-block align-top" alt="" >
+        </a>
+      </nav>
+      <div>
+        <nav class="navbar navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+            Busqueda avanzada
+          </a>
+        </nav>
+      </div>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Google</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="imagenes.html">Imagenes</a>
+        </li>
+      </ul>
+      <form action="https://google.com/search">
+        <div>
+          <label for="nombre" class="sangradoderecha">todas estas palabras:</label>
+          <input type="text" name="as_q" size="65"/>
+          Ingresa las palabras importantes: Terrier ratonero tricolor
+        </div>
+
+        <div>
+          <label for="apellidos" class="sangradoderecha">todas estas palabras:</label>
+          <input type="text" name="as_epq" size="65" />
+          Ingresa las palabras exactas entre comillas: "Terrier ratonero"
+        </div>
+
+        <div>
+          <label for="apellidos" class="sangradoderecha">cualquiera de estas palabras:</label>
+          <input type="text" name="as_oq" size="65" />
+          Ingresa OR entre las palabras que desees: En miniatura OR estándar
+        </div>
+
+        <div>
+          <label for="apellidos" class="sangradoderecha">ninguna de estas palabras</label>
+          <input type="text" name="as_eq" size="65" />
+          Ingresa un signo menos justo delante de las palabras que no deseas que aparezcan: -Roedor, -"Jack Russell" .
+        </div>
+        <p>
+          <input type="submit" value="Busqueda avanzada" class="btn btn-primary" style="position: absolute;top: 60%; left:75%;">
+
+        </p>
+      </form>
+    </body>
+</html>
